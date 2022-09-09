@@ -22,18 +22,28 @@
     font-weight: lighter;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "SourceSansPro";
+    overflow-x: hidden;
 }
 
 header {
-    background-color: #2C3F4D;
+    background: none;
     color: #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
     padding: 0vw 2vw 0vw 2vw;
+}
+
+header section:first-of-type {
+    display: flex;
+    align-items: center;
 }
 
 header img {
@@ -48,6 +58,80 @@ header a {
 
 header .sel {
     font-weight: bold;
+}
+
+main {
+    margin-top: -10vh;
+}
+
+.landing {
+    min-height: 1080px;
+    background: url(/images/bg/00_spikefield.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+}
+
+.landing h1 {
+    font-size: 5vw;
+    padding: 0 20vw 0 20vw;
+}
+
+.landing h2 {
+    font-size: 2.25vw;
+    font-weight: normal;
+}
+
+.landing button {
+    color: #FFF;
+    background: #00000044;
+    text-align: center;
+    font-weight: bold;
+    border-color: #FFF;
+    border-width: 4px;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 5vh;
+    padding: 0.75vw 4vw 0.75vw 4vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+}
+
+.landing a {
+    
+}
+
+.landing a:hover {
+    color: #FFF;
+}
+
+.landing a:visited {
+    color: #FFF;
+}
+
+.info-block {
+    padding: 2vw;
+}
+
+.info-block a {
+    text-decoration: underline;
+}
+
+.info-block a:hover {
+    color: #000;
+}
+
+.info-block a:visited {
+    color: #000;
+}
+
+.info-block p {
+    font-size: 20px;
 }
 
 footer {
