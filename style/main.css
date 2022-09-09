@@ -54,10 +54,18 @@ header a {
     text-decoration: underline;
 }
 
+header img + a {
+    margin-left: 1vh;
+}
+
 /* Make text of currently selected header element bold */
 
 header .sel {
     font-weight: bold;
+}
+
+header nav a {
+    margin-left: 2.5vw;
 }
 
 main {
@@ -78,13 +86,22 @@ main {
 }
 
 .landing h1 {
-    font-size: 5vw;
+    font-size: 96px;
     padding: 0 20vw 0 20vw;
 }
 
 .landing h2 {
-    font-size: 2.25vw;
+    font-size: 36px;
     font-weight: normal;
+}
+
+@media only screen and (max-width: 800px) {
+    .landing h1 {
+        font-size: 48px;
+    }    
+    .landing h2 {
+        font-size: 26px;
+    }
 }
 
 .landing button {
@@ -100,10 +117,14 @@ main {
     margin-top: 5vh;
     padding: 0.75vw 4vw 0.75vw 4vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+    transition-property: padding;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
+  
 }
 
-.landing a {
-    
+.landing button:hover {
+    padding: 0.75vw 4.5vw 0.75vw 4.5vw;
 }
 
 .landing a:hover {
@@ -118,25 +139,30 @@ main {
     padding: 2vw;
 }
 
-.info-block a {
+article a {
     text-decoration: underline;
 }
 
-.info-block a:hover {
+article a:hover {
     color: #000;
 }
 
-.info-block a:visited {
+article a:visited {
     color: #000;
 }
 
-.info-block p {
+article p {
     font-size: 20px;
+}
+
+article a {
+    color: #2C3F4D;
 }
 
 footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
     padding: 3vw 2vw 3vw 2vw;
     background-color: #2C3F4D;
     color: #FFF;
