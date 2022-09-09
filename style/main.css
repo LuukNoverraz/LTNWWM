@@ -1,0 +1,27 @@
+@font-face {
+    font-family: YuGothicLight;
+    src: url(fonts/YuGothicLight.ttf);
+}
+
+@font-face {
+    font-family: YuGothicBold;
+    src: url(fonts/YuGothicBold.ttf);
+}
+
+body {
+    font-family: YuGothicLight;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3vw 2vw 3vw 2vw;
+    background-color: #2C3F4D;
+    color: #FFF;
+    font-size: 20px;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: underline;
+}
