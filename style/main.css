@@ -1,15 +1,53 @@
 @font-face {
-    font-family: YuGothicLight;
-    src: url(fonts/YuGothicLight.ttf);
+    font-family: "SourceSansPro";
+    src: url(fonts/SourceSansPro.ttf) format("truetype");
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: YuGothicBold;
-    src: url(fonts/YuGothicBold.ttf);
+    font-family: "SourceSansPro";
+    src: url(fonts/SourceSansProItalic.ttf) format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url(fonts/SourceSansProBold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url(fonts/SourceSansProLight.ttf) format("truetype");
+    font-weight: lighter;
 }
 
 body {
-    font-family: YuGothicLight;
+    font-family: "SourceSansPro";
+}
+
+header {
+    background-color: #2C3F4D;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0vw 2vw 0vw 2vw;
+}
+
+header img {
+    max-height: 4vh;
+}
+
+header a {
+    text-decoration: underline;
+}
+
+/* Make text of currently selected header element bold */
+
+header .sel {
+    font-weight: bold;
 }
 
 footer {
