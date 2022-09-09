@@ -66,7 +66,7 @@ main {
 
 .landing {
     min-height: 1080px;
-    background: url(/images/bg/00_spikefield.png) no-repeat center;
+    /* background: url(/images/bg/00_spikefield.png) no-repeat center; */
     background-size: cover;
     display: flex;
     flex-direction: column;
