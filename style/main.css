@@ -39,6 +39,7 @@ header {
     align-items: center;
     height: 10vh;
     padding: 0vw 2vw 0vw 2vw;
+    font-size: 20px;
 }
 
 header section:first-of-type {
@@ -93,15 +94,6 @@ main {
 .landing h2 {
     font-size: 36px;
     font-weight: normal;
-}
-
-@media only screen and (max-width: 800px) {
-    .landing h1 {
-        font-size: 48px;
-    }    
-    .landing h2 {
-        font-size: 26px;
-    }
 }
 
 .landing button {
@@ -172,4 +164,17 @@ footer {
 footer a {
     color: #FFF;
     text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 860px) {
+    header {
+        font-size: 14px;
+    }
+    .landing h1 {
+        font-size: 48px;
+    }    
+    .landing h2 {
+        font-size: 26px;
+    }
 }
