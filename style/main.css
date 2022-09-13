@@ -74,7 +74,7 @@ main {
 }
 
 .landing {
-    min-height: 1080px;
+    min-height: 100vh;
     /* background: url(/images/bg/00_spikefield.png) no-repeat center; */
     background-size: cover;
     display: flex;
@@ -87,12 +87,12 @@ main {
 }
 
 .landing h1 {
-    font-size: 96px;
+    font-size: 6vw;
     padding: 0 20vw 0 20vw;
 }
 
 .landing h2 {
-    font-size: 36px;
+    font-size: 3vw;
     font-weight: normal;
 }
 
@@ -172,9 +172,10 @@ footer a {
         font-size: 14px;
     }
     .landing h1 {
-        font-size: 48px;
+        font-size: 10vw;
     }    
     .landing h2 {
-        font-size: 26px;
+        font-size: 6vw;
+        max-width: 80%;
     }
 }
