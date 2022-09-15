@@ -47,6 +47,10 @@ header section:first-of-type {
     align-items: center;
 }
 
+header section:first-of-type a {
+    color: #FFF;
+}
+
 header img {
     max-height: 4vh;
 }
@@ -67,6 +71,7 @@ header .sel {
 
 header nav a {
     margin-left: 2.5vw;
+    color: #FFF;
 }
 
 main {
@@ -131,6 +136,12 @@ main {
     padding: 2vw;
 }
 
+.info-block img {
+    max-height: 20vh;
+    border: 1px #858585 solid;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
 article a {
     text-decoration: underline;
 }
@@ -149,6 +160,15 @@ article p {
 
 article a {
     color: #2C3F4D;
+}
+
+figure {
+    margin-inline-start: 0px;
+}
+
+figcaption {
+    color: #858585;
+    margin-top: 1vh;
 }
 
 footer {
