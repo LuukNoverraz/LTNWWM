@@ -74,13 +74,20 @@ header nav a {
     color: #FFF;
 }
 
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
 main {
     margin-top: -10vh;
 }
 
 .landing {
     min-height: 100vh;
-    /* background: url(/images/bg/00_spikefield.png) no-repeat center; */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -132,8 +139,13 @@ main {
     color: #FFF;
 }
 
+.info-header {
+    min-height: 33.3vh;
+}
+
 .info-block {
     padding: 2vw;
+    min-height: 66.7vh;
 }
 
 .info-block img {

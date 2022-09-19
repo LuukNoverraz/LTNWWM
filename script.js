@@ -4,6 +4,6 @@ const taglines = ['This place is not a place of honor', 'No highly esteemed deed
 const images = ["images/bg/00_spikefield.png", "images/bg/01_spikefield.png", "images/bg/02_spikefield.png", "images/bg/03_landscapeofthorns.png",
                 "images/bg/04_landscapeofthorns.png", "images/bg/05_forbiddingblocks.png"]
 
-document.getElementById("tagline").innerHTML = taglines[Math.floor(Math.random() * taglines.length)];
 
 document.getElementsByClassName("landing")[0].style.background = "url(" + images[Math.floor(Math.random() * images.length)] + ") no-repeat center";
+document.getElementById("tagline").innerHTML = taglines[Math.floor(Math.random() * taglines.length)];
