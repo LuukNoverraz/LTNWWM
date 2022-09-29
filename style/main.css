@@ -139,16 +139,28 @@ main {
     color: #FFF;
 }
 
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
 .info-header {
     min-height: 33.3vh;
 }
 
-.info-block {
+main > section:nth-of-type(2) {
     padding: 2vw;
     min-height: 66.7vh;
 }
 
-.info-block img {
+main > section:nth-of-type(2) article {
+    
+}
+
+main > section:nth-of-type(2) img {
     max-height: 20vh;
     border: 1px #858585 solid;
 }
