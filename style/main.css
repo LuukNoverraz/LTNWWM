@@ -16,12 +16,6 @@
     font-weight: bold;
 }
 
-@font-face {
-    font-family: "SourceSansPro";
-    src: url(fonts/SourceSansProLight.ttf) format("truetype");
-    font-weight: lighter;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -152,21 +146,36 @@ h3 {
 }
 
 main > section:nth-of-type(2) {
-    padding: 2vw;
     min-height: 66.7vh;
+    padding: 24px;
 }
 
-main > section:nth-of-type(2) article {
-    
+section#down {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
-main > section:nth-of-type(2) img {
+section#down article {
+    padding: 10px;
+    border: 1px dotted #858585;
+}
+
+section#down h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #858585;
+}
+
+section#down img {
     max-height: 20vh;
     border: 1px #858585 solid;
 }
 
 article a {
     text-decoration: underline;
+    color: #2C3F4D;
 }
 
 article a:hover {
@@ -175,15 +184,17 @@ article a:hover {
 
 article p, blockquote {
     font-size: 1.25em;
+    padding-top: 10px;
+}
+
+article ul {
+    list-style: disc;
+    padding: 10px 0 0 24px;
 }
 
 blockquote {
     padding-left: 2vw;
     border-left: lightgrey 2px solid;
-}
-
-article a {
-    color: #2C3F4D;
 }
 
 figure, blockquote {
