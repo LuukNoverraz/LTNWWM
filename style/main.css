@@ -163,6 +163,10 @@ section#down article {
     border: 1px dotted #858585;
 }
 
+section#down article:hover {
+    border: 1px dotted #2C3F4D;
+}
+
 section#down h2 {
     padding-bottom: 10px;
     border-bottom: 1px dotted #858585;
@@ -170,6 +174,12 @@ section#down h2 {
 
 section#down img {
     max-height: 20vh;
+    border: 1px #858585 solid;
+    transition: 0.33s ease-in-out;
+}
+
+section#down img:hover {
+    max-height: 22vh;
     border: 1px #858585 solid;
 }
 
@@ -235,5 +245,12 @@ footer a {
     .landing h2 {
         font-size: 6vw;
         max-width: 80%;
+    }
+    section#down {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
     }
 }
