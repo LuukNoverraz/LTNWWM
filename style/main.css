@@ -1,3 +1,5 @@
+/* Import fonts using font face */
+
 @font-face {
     font-family: "SourceSansPro";
     src: url(fonts/SourceSansPro.ttf) format("truetype");
@@ -234,6 +236,8 @@ footer a {
     color: #FFF;
     text-decoration: underline;
 }
+
+/* Media query for mobile/tablet responsivity */
 
 @media only screen and (max-width: 860px) {
     header {
