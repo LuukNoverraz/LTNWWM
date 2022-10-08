@@ -186,18 +186,16 @@ section#down h2 {
 
 figure img {
     max-height: 20vh;
-    /* border: 1px #858585 solid; */
     transition: 0.33s ease-in-out;
 }
 
 figure img:hover {
     max-height: 22vh;
-    /* border: 1px #858585 solid; */
 }
 
 /* Only images outside of figure element take up full section width */
 
-main img:not(figure img) {
+main img:not(figure img, li img) {
     width: 100%;
 }
 
@@ -233,9 +231,19 @@ blockquote em {
     font-weight: 100;
 }
 
-figcaption {
+figcaption, ul p {
+    font-size: 1em;
     color: #858585;
     margin-top: 1vh;
+}
+
+li img {
+    max-height: 11vh;
+    transition: 0.33s ease-in-out;
+}
+
+li img:hover {
+    max-height: 15vh;
 }
 
 footer {
@@ -252,6 +260,8 @@ footer a {
     color: #FFF;
     text-decoration: underline;
 }
+
+/* Make GitHub spin :D */
 
 @keyframes spin {
     from {transform: rotate(0deg);}
